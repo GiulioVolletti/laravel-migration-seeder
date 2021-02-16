@@ -18,8 +18,8 @@ class ArticlesTableSeeder extends Seeder
             $article = new Article(); 
             $article->title = $faker->word();
             $article->subtitle = $faker->text(100);
-            $article->author = $faker->name();
-            $article->text = $faker->text(100);
+            $article->author = $faker->name(null);
+            $article->text = $faker->text(200);
             $article->publication_date = $faker->date( 'Y-m-d') ;
             $article->save();
         }
